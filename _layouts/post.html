@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="post-content">
+  <div class="section-label">{{ page.categories | join: " · " }}</div>
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    <span class="post-meta-date">{{ page.date | date: "%B %d, %Y" }}</span>
+    {% if page.categories %}
+    <span class="post-meta-cats">{{ page.categories | join: " · " }}</span>
+    {% endif %}
+  </div>
+  {{ content }}
+</article>

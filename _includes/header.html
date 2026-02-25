@@ -1,0 +1,22 @@
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">samrudhi<span>.</span>builds</a>
+
+    <ul class="nav-links" id="nav-links">
+      {% for link in site.nav_links %}
+      <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <div class="nav-right">
+      <span class="theme-indicator" id="theme-indicator">dark</span>
+      <div class="theme-wrapper">
+        <button class="theme-btn" id="theme-btn" aria-label="Switch theme" title="Switch theme">🎨</button>
+        <div class="theme-popup" id="theme-popup"></div>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>

@@ -18,21 +18,48 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/my-blog" # the subpath of your site, e.g. /blog
-url: "https://samrudhi-builds.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Samrudhi Builds
+email: samrudhib24@gmail.com
+description: >-
+  B.Tech IT student with Honors in Cybersecurity at KJSCE. Writing about
+  blockchain, cybersecurity, full-stack development, and building things that matter.
+baseurl: "/my-blog"
+url: "https://elysian0987.github.io"
+github_username: samrudhi-builds
+linkedin_username: samrudhi-b-4564a1258
+portfolio_url: "https://samrudhib-portfolio.web.app"
+substack_tech: "https://containersandcoffee.substack.com"
+substack_photo: "https://framesandfrappes.substack.com"
+
+author:
+  name: Samrudhi B
+  tagline: Software Engineer • Full-Stack Developer • UI/UX Designer
+  bio: >-
+    B.Tech IT student with Honors in Cybersecurity at KJSCE, Mumbai.
+    Building at the intersection of blockchain, cybersecurity, and design.
+    Climate hackathon winner (₹1.5L), Springer-published researcher,
+    Commonwealth Digital Prototyping Challenge team lead.
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects/
+  - title: Experience
+    url: /experience/
+  - title: Certifications
+    url: /certifications/
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
