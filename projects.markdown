@@ -8,7 +8,7 @@ permalink: /projects/
 
 <!-- ═══  HACKATHON PROJECTS  ═══ -->
 <div style="margin-bottom:3.5rem;">
-  <h2 style="font-size:1.25rem;font-weight:700;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">🏆 Hackathon Projects</h2>
+  <h2 style="font-size:1.25rem;font-weight:700;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">✦ Hackathon Projects</h2>
   <div class="cards-grid">
 
     <div class="card">

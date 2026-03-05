@@ -1,14 +1,14 @@
-/* Samrudhi Builds — Theme Switcher & Nav */
+/* Samrudhi Builds — Theme Switcher, Nav & Scroll-Spy */
 (function () {
   var THEMES = [
-    { id: 'dark',   label: 'Dark',   dot: '#58a6ff', icon: '🌙' },
-    { id: 'light',  label: 'Light',  dot: '#0969da', icon: '☀️' },
-    { id: 'coffee', label: 'Coffee', dot: '#d4854a', icon: '☕' },
-    { id: 'cyber',  label: 'Cyber',  dot: '#00f5ff', icon: '⚡' },
+    { id: 'dark',   label: 'Dark',   dot: '#58a6ff' },
+    { id: 'light',  label: 'Light',  dot: '#0969da' },
+    { id: 'coffee', label: 'Coffee', dot: '#d4854a' },
+    { id: 'cyber',  label: 'Cyber',  dot: '#00f5ff' },
   ];
 
   // Apply saved theme immediately (prevent flash)
-  var currentTheme = localStorage.getItem('sb-theme') || 'dark';
+  var currentTheme = localStorage.getItem('sb-theme') || 'coffee';
   document.documentElement.setAttribute('data-theme', currentTheme);
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -17,15 +17,21 @@
     var indicator = document.getElementById('theme-indicator');
     var hamburger = document.getElementById('nav-hamburger');
     var navLinks  = document.getElementById('nav-links');
+    var nav       = document.querySelector('.site-nav');
 
     // ── Indicator ──────────────────────────────────────────────
-    function setIndicator(id) {
-      if (indicator) indicator.textContent = id;
+    function setIndicator() {
+      if (indicator) indicator.textContent = 'theme';
     }
-    setIndicator(currentTheme);
+    setIndicator();
 
     // ── Build popup options ─────────────────────────────────────
     if (popup) {
+      var popupHeader = document.createElement('div');
+      popupHeader.className = 'theme-popup-header';
+      popupHeader.textContent = 'Pick your theme';
+      popup.appendChild(popupHeader);
+
       THEMES.forEach(function (theme) {
         var opt = document.createElement('button');
         opt.className = 'theme-option' + (theme.id === currentTheme ? ' active' : '');
@@ -37,7 +43,7 @@
           currentTheme = theme.id;
           document.documentElement.setAttribute('data-theme', currentTheme);
           localStorage.setItem('sb-theme', currentTheme);
-          setIndicator(currentTheme);
+          setIndicator();
           popup.querySelectorAll('.theme-option').forEach(function (o) {
             o.classList.remove('active');
           });
@@ -68,7 +74,6 @@
       hamburger.addEventListener('click', function () {
         navLinks.classList.toggle('open');
       });
-      // Close nav on link click
       navLinks.querySelectorAll('a').forEach(function (link) {
         link.addEventListener('click', function () {
           navLinks.classList.remove('open');
@@ -76,13 +81,149 @@
       });
     }
 
-    // ── Active nav link highlight ───────────────────────────────
-    var path = window.location.pathname;
-    document.querySelectorAll('.nav-links a').forEach(function (link) {
-      var href = link.getAttribute('href');
-      if (href && path.endsWith(href.replace(/\/$/, ''))) {
-        link.classList.add('active');
-      }
+    // ── Smooth scroll for anchor links ───────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          var navHeight = document.querySelector('.site-nav')
+            ? document.querySelector('.site-nav').offsetHeight
+            : 64;
+          var top = target.getBoundingClientRect().top + window.scrollY - navHeight - 8;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
     });
+
+    // ── Scroll-spy — highlight active section in nav ─────────────
+    var sections = [];
+    document.querySelectorAll('section[id]').forEach(function (s) {
+      sections.push(s);
+    });
+
+    function getNavAnchorLinks() {
+      return document.querySelectorAll('.nav-links a[data-anchor]');
+    }
+
+    function setActiveLink(id) {
+      getNavAnchorLinks().forEach(function (link) {
+        var anchor = link.getAttribute('data-anchor');
+        if (anchor === '#' + id) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    function setActiveDot(id) {
+      document.querySelectorAll('.dot-nav-item').forEach(function (item) {
+        if (item.getAttribute('data-dotid') === id) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+
+    if ('IntersectionObserver' in window && sections.length > 0) {
+      var navHeight = document.querySelector('.site-nav')
+        ? document.querySelector('.site-nav').offsetHeight
+        : 64;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setActiveLink(entry.target.id);
+            setActiveDot(entry.target.id);
+          }
+        });
+      }, {
+        rootMargin: '-' + navHeight + 'px 0px -60% 0px',
+        threshold: 0
+      });
+
+      sections.forEach(function (s) { observer.observe(s); });
+    }
+
+    // ── Transparent nav → solid on scroll ──────────────────────
+    if (nav) {
+      function updateNav() {
+        if (window.scrollY > 20) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+      updateNav();
+      window.addEventListener('scroll', updateNav, { passive: true });
+    }
+
+    // ── Section collapse / expand ─────────────────────────────
+    // Dynamically wrap everything after .section-header in a collapsible body
+    document.querySelectorAll('section.section').forEach(function (section) {
+      var container = section.querySelector('.container');
+      var header    = section.querySelector('.section-header');
+      if (!container || !header) return;
+
+      var siblings = [];
+      var node = header.nextElementSibling;
+      while (node) { siblings.push(node); node = node.nextElementSibling; }
+      if (siblings.length === 0) return;
+
+      var body  = document.createElement('div');
+      body.className = 'section-body';
+      var inner = document.createElement('div');
+      inner.className = 'section-body-inner';
+      body.appendChild(inner);
+      siblings.forEach(function (s) { inner.appendChild(s); });
+      container.appendChild(body);
+    });
+
+    // Accordion collapse / expand — only ONE section expanded at a time
+    // Whichever section has ≥35% of itself visible AND has the most visible
+    // pixels wins; all others collapse.
+    var collapseSections = Array.prototype.slice.call(
+      document.querySelectorAll('section.section')
+    );
+
+    function updateExpanded() {
+      var vp     = window.innerHeight;
+      var winner = null;
+      var best   = -1;
+
+      collapseSections.forEach(function (s) {
+        var r       = s.getBoundingClientRect();
+        var visible = Math.min(r.bottom, vp) - Math.max(r.top, 0);
+        if (visible <= 0) return;
+
+        var ratio   = visible / r.height;
+        var thresh  = r.height > vp * 0.65 ? 0.10 : 0.35;
+        if (ratio >= thresh && visible > best) {
+          best   = visible;
+          winner = s;
+        }
+      });
+
+      collapseSections.forEach(function (s) {
+        if (s === winner) {
+          s.classList.add('expanded');
+        } else {
+          s.classList.remove('expanded');
+        }
+      });
+
+      // sync dot nav + top nav with accordion winner
+      if (winner && winner.id) {
+        setActiveLink(winner.id);
+        setActiveDot(winner.id);
+      }
+    }
+
+    updateExpanded();
+    window.addEventListener('scroll', updateExpanded, { passive: true });
+    window.addEventListener('resize', updateExpanded, { passive: true });
   });
 })();
+

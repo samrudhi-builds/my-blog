@@ -48,7 +48,7 @@ I write about cybersecurity, containers, and building things at [Containers & Co
 <div class="achievements-list">
 
   <div class="achievement">
-    <div class="achievement-icon">🏆</div>
+    <div class="achievement-icon">✦</div>
     <div>
       <div class="achievement-title">Climate Hackathon Winner — ₹1.5L Grant</div>
       <div class="achievement-sub">Led AI-powered pollutant mapping using satellite data. Awarded by U.S. Consulate &amp; Ekonnect Foundation, selected for campus implementation.</div>
@@ -56,7 +56,7 @@ I write about cybersecurity, containers, and building things at [Containers & Co
   </div>
 
   <div class="achievement">
-    <div class="achievement-icon">🌍</div>
+    <div class="achievement-icon">◉</div>
     <div>
       <div class="achievement-title">Commonwealth Digital Prototyping Challenge</div>
       <div class="achievement-sub">Team Lead under Governance &amp; Peace Directorate, recognized by the Assistant Secretary-General.</div>
@@ -64,7 +64,7 @@ I write about cybersecurity, containers, and building things at [Containers & Co
   </div>
 
   <div class="achievement">
-    <div class="achievement-icon">📄</div>
+    <div class="achievement-icon">▸</div>
     <div>
       <div class="achievement-title">Springer Research Publication</div>
       <div class="achievement-sub">Published paper on food delivery app innovations at ICICCT-2025.</div>
@@ -72,7 +72,7 @@ I write about cybersecurity, containers, and building things at [Containers & Co
   </div>
 
   <div class="achievement">
-    <div class="achievement-icon">⛓️</div>
+    <div class="achievement-icon">◆</div>
     <div>
       <div class="achievement-title">Blockchain Research Contributor</div>
       <div class="achievement-sub">Contributing to CADWAS Bitcoin forensics tool and decentralized systems at EUCLID Lab, KJSCE.</div>
@@ -80,7 +80,7 @@ I write about cybersecurity, containers, and building things at [Containers & Co
   </div>
 
   <div class="achievement">
-    <div class="achievement-icon">☁️</div>
+    <div class="achievement-icon">◇</div>
     <div>
       <div class="achievement-title">Google Cloud Career Launchpad</div>
       <div class="achievement-sub">Cybersecurity track — Google Cloud Skills Boost, Dec 2025.</div>
@@ -88,7 +88,7 @@ I write about cybersecurity, containers, and building things at [Containers & Co
   </div>
 
   <div class="achievement">
-    <div class="achievement-icon">🚀</div>
+    <div class="achievement-icon">↑</div>
     <div>
       <div class="achievement-title">Top 40 Finalist — Vyom AI Plus</div>
       <div class="achievement-sub">Smart ticketing system using OCR, ML, liveness checks, and chatbot integration.</div>

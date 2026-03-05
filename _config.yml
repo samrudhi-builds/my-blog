@@ -48,18 +48,18 @@ plugins:
 
 # Custom navigation
 nav_links:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /projects/
-  - title: Experience
-    url: /experience/
-  - title: Certifications
-    url: /certifications/
   - title: About
-    url: /about/
+    url: "#about"
+  - title: Projects
+    url: "#projects"
+  - title: Experience
+    url: "#experience"
+  - title: Certifications
+    url: "#certifications"
   - title: Blog
-    url: /blog/
+    url: "#blog"
+  - title: Contact
+    url: "#contact"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
