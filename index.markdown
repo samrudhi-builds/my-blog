@@ -1,22 +1,22 @@
 ---
 layout: home
-title: Samrudhi B â€” Software Engineer & Cybersecurity
+title: Samrudhi B — Software Engineer & Cybersecurity
 permalink: /
 ---
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  HERO  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?  HERO  �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�? -->
 <section class="hero" id="home">
   <div class="container">
-    <div class="hero-tag">B.Tech IT Â· Honors in Cybersecurity Â· KJSCE Mumbai</div>
+    <div class="hero-tag">B.Tech IT · Honors in Cybersecurity · KJSCE Mumbai</div>
     <h1>Samrudhi <span class="accent">B.</span></h1>
-    <p class="hero-tagline">Software Engineer &nbsp;Â·&nbsp; Full-Stack Developer &nbsp;Â·&nbsp; UI/UX Designer</p>
+    <p class="hero-tagline">Software Engineer &nbsp;·&nbsp; Full-Stack Developer &nbsp;·&nbsp; UI/UX Designer</p>
     <p class="hero-bio">
       Building at the intersection of blockchain, AI, and cybersecurity.
-      Climate hackathon winner Â· Springer-published researcher Â· Commonwealth challenge team lead.
+      Climate hackathon winner · Springer-published researcher · Commonwealth challenge team lead.
     </p>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-value">â‚¹1.5L</div>
+        <div class="stat-value">₹1.5L</div>
         <div class="stat-label">Grant Won</div>
       </div>
       <div class="stat">
@@ -35,18 +35,18 @@ permalink: /
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-      <a href="https://samrudhib-portfolio.web.app" class="btn btn-secondary" target="_blank" rel="noopener">Full Portfolio â†—</a>
+      <a href="https://samrudhib-portfolio.web.app" class="btn btn-secondary" target="_blank" rel="noopener">Full Portfolio ↗</a>
     </div>
     <div class="social-strip" style="margin-top:2rem;">
       <a href="https://github.com/samrudhi-builds" class="social-link" target="_blank" rel="noopener">GitHub</a>
       <a href="https://linkedin.com/in/samrudhi-b-4564a1258" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:samrudhib24@gmail.com" class="social-link">Email</a>
-      <a href="https://containersandcoffee.substack.com" class="social-link" target="_blank" rel="noopener">â˜• Newsletter</a>
+      <a href="https://containersandcoffee.substack.com" class="social-link" target="_blank" rel="noopener">☕ Newsletter</a>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  ABOUT  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?  ABOUT  �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�? -->
 <section class="section" id="about">
   <div class="container">
     <div class="section-header">
@@ -55,59 +55,59 @@ permalink: /
     </div>
     <div class="about-grid">
       <div class="about-bio">
-        <p>I'm a B.Tech Information Technology student with Honors in Cybersecurity at K.J. Somaiya College of Engineering, Mumbai. I love fusing technical depth with design thinking â€” from blockchain systems to secure architectures and intuitive UI/UX.</p>
+        <p>I'm a B.Tech Information Technology student with Honors in Cybersecurity at K.J. Somaiya College of Engineering, Mumbai. I love fusing technical depth with design thinking — from blockchain systems to secure architectures and intuitive UI/UX.</p>
         <p>What really excites me? Crafting secure digital futures at the intersection of <strong>Cybersecurity</strong>, <strong>AI</strong>, and <strong>Blockchain</strong>. I thrive on connecting diverse domains to engineer bold, functional, and secure systems that solve real problems.</p>
         <h4>Core Expertise</h4>
         <ul>
-          <li><strong>Cybersecurity</strong> â€” Secure systems, vulnerability analysis (XSS, SQLi), Burp Suite, Metasploit, Nmap, DVWA</li>
-          <li><strong>Blockchain</strong> â€” Smart contracts, decentralized systems, Bitcoin forensics (CADWAS @ EUCLID Lab)</li>
-          <li><strong>Full-Stack</strong> â€” React, Next.js, Node.js, PHP/MySQL, Supabase, Tailwind CSS</li>
-          <li><strong>Machine Learning</strong> â€” Python, data preprocessing, predictive modeling, EDA</li>
-          <li><strong>UI/UX Design</strong> â€” User-centered design, Figma, interaction prototyping (Coursera certified)</li>
+          <li><strong>Cybersecurity</strong> — Secure systems, vulnerability analysis (XSS, SQLi), Burp Suite, Metasploit, Nmap, DVWA</li>
+          <li><strong>Blockchain</strong> — Smart contracts, decentralized systems, Bitcoin forensics (CADWAS @ EUCLID Lab)</li>
+          <li><strong>Full-Stack</strong> — React, Next.js, Node.js, PHP/MySQL, Supabase, Tailwind CSS</li>
+          <li><strong>Machine Learning</strong> — Python, data preprocessing, predictive modeling, EDA</li>
+          <li><strong>UI/UX Design</strong> — User-centered design, Figma, interaction prototyping (Coursera certified)</li>
         </ul>
         <div class="social-strip" style="margin-top:1.5rem;">
           <a href="https://github.com/samrudhi-builds" class="social-link" target="_blank" rel="noopener">GitHub</a>
           <a href="https://linkedin.com/in/samrudhi-b-4564a1258" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://containersandcoffee.substack.com" class="social-link" target="_blank" rel="noopener">â˜• Containers & Coffee</a>
-          <a href="https://framesandfrappes.substack.com" class="social-link" target="_blank" rel="noopener">ðŸ“¸ Frames & Frappes</a>
+          <a href="https://containersandcoffee.substack.com" class="social-link" target="_blank" rel="noopener">☕ Containers & Coffee</a>
+          <a href="https://framesandfrappes.substack.com" class="social-link" target="_blank" rel="noopener">📸 Frames & Frappes</a>
         </div>
       </div>
       <div>
         <p class="sidebar-title">Key Achievements</p>
         <div class="achievements-list">
           <div class="achievement">
-            <div class="achievement-icon">âœ¦</div>
+            <div class="achievement-icon">✦</div>
             <div>
-              <div class="achievement-title">Climate Hackathon Winner â€” â‚¹1.5L Grant</div>
+              <div class="achievement-title">Climate Hackathon Winner — ₹1.5L Grant</div>
               <div class="achievement-sub">AI + satellite-data pollutant mapping. Awarded by U.S. Consulate & Ekonnect Foundation.</div>
             </div>
           </div>
           <div class="achievement">
-            <div class="achievement-icon">â—‰</div>
+            <div class="achievement-icon">◉</div>
             <div>
               <div class="achievement-title">Commonwealth Digital Prototyping Challenge</div>
               <div class="achievement-sub">Team Lead under Governance & Peace Directorate. Recognized by the Assistant Secretary-General.</div>
             </div>
           </div>
           <div class="achievement">
-            <div class="achievement-icon">â–¸</div>
+            <div class="achievement-icon">▸</div>
             <div>
               <div class="achievement-title">Springer Research Publication</div>
-              <div class="achievement-sub">Food delivery app innovations â€” ICICCT-2025, Springer.</div>
+              <div class="achievement-sub">Food delivery app innovations — ICICCT-2025, Springer.</div>
             </div>
           </div>
           <div class="achievement">
-            <div class="achievement-icon">â—†</div>
+            <div class="achievement-icon">◆</div>
             <div>
               <div class="achievement-title">Blockchain Research @ EUCLID Lab</div>
-              <div class="achievement-sub">Contributing to CADWAS â€” a Bitcoin forensics tool.</div>
+              <div class="achievement-sub">Contributing to CADWAS — a Bitcoin forensics tool.</div>
             </div>
           </div>
           <div class="achievement">
-            <div class="achievement-icon">â—‡</div>
+            <div class="achievement-icon">◇</div>
             <div>
               <div class="achievement-title">Google Cloud Career Launchpad</div>
-              <div class="achievement-sub">Cybersecurity track â€” Google Cloud Skills Boost, Dec 2025.</div>
+              <div class="achievement-sub">Cybersecurity track — Google Cloud Skills Boost, Dec 2025.</div>
             </div>
           </div>
         </div>
@@ -116,22 +116,22 @@ permalink: /
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  PROJECTS  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?  PROJECTS  �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�? -->
 <section class="section" id="projects">
   <div class="container">
     <div class="section-header">
       <div class="section-label">// projects</div>
       <h2 class="section-title">Things I've Built</h2>
-      <p class="section-sub">Hackathon wins Â· personal builds Â· academic work</p>
+      <p class="section-sub">Hackathon wins · personal builds · academic work</p>
     </div>
 
     <div style="margin-bottom:2.5rem;">
-      <h3 style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:1rem;font-family:'JetBrains Mono',monospace;">âœ¦ Hackathon</h3>
+      <h3 style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:1rem;font-family:'JetBrains Mono',monospace;">✦ Hackathon</h3>
       <div class="cards-grid">
         <div class="card">
           <div class="card-header">
             <h3>Ekonnect Climate Hackathon</h3>
-            <span class="card-badge winner">Winner Â· â‚¹1.5L</span>
+            <span class="card-badge winner">Winner · ₹1.5L</span>
           </div>
           <p>Satellite-based ecosystem recovery tracker using AI & ML. Selected for campus implementation by U.S. Consulate and Ekonnect Foundation.</p>
           <div class="tags"><span class="tag">AI</span><span class="tag">Satellite Data</span><span class="tag">ML</span><span class="tag">Python</span></div>
@@ -148,21 +148,21 @@ permalink: /
     </div>
 
     <div style="margin-bottom:2.5rem;">
-      <h3 style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:1rem;font-family:'JetBrains Mono',monospace;">ðŸ”¨ Personal</h3>
+      <h3 style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:1rem;font-family:'JetBrains Mono',monospace;">🔨 Personal</h3>
       <div class="cards-grid">
         <div class="card">
           <div class="card-header"><h3>CanUscrape</h3><span class="card-badge">OSINT</span></div>
-          <p>CLI reconnaissance tool â€” automated robots.txt auditor for ethical hackers. Identifies hidden directories and attack surfaces.</p>
+          <p>CLI reconnaissance tool — automated robots.txt auditor for ethical hackers. Identifies hidden directories and attack surfaces.</p>
           <div class="tags"><span class="tag">Ruby</span><span class="tag">OSINT</span><span class="tag">Pentesting</span></div>
-          <div class="card-links"><a href="https://github.com/samrudhi-builds/canUscrape" class="card-link" target="_blank" rel="noopener">GitHub â†’</a></div>
+          <div class="card-links"><a href="https://github.com/samrudhi-builds/canUscrape" class="card-link" target="_blank" rel="noopener">GitHub →</a></div>
         </div>
         <div class="card">
           <div class="card-header"><h3>Nmap Security Dashboard</h3><span class="card-badge">Security</span></div>
           <p>Python dashboard for visualizing Nmap scans with actionable insights for vulnerability assessment and network security analysis.</p>
           <div class="tags"><span class="tag">Python</span><span class="tag">Nmap</span><span class="tag">Cybersecurity</span></div>
           <div class="card-links">
-            <a href="https://github.com/samrudhi-builds/nmap-security-dashboard" class="card-link" target="_blank" rel="noopener">GitHub â†’</a>
-            <a href="https://nmap-security-dashboard-1.onrender.com/" class="card-link" target="_blank" rel="noopener">Live â†’</a>
+            <a href="https://github.com/samrudhi-builds/nmap-security-dashboard" class="card-link" target="_blank" rel="noopener">GitHub →</a>
+            <a href="https://nmap-security-dashboard-1.onrender.com/" class="card-link" target="_blank" rel="noopener">Live →</a>
           </div>
         </div>
         <div class="card">
@@ -174,71 +174,71 @@ permalink: /
           <div class="card-header"><h3>Literary Ledger</h3><span class="card-badge">Full-Stack</span></div>
           <p>Modern book cataloging web app with secure auth, dynamic management, and responsive design. Built with Next.js + Supabase.</p>
           <div class="tags"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">Tailwind</span></div>
-          <div class="card-links"><a href="https://literary-ledger.vercel.app/" class="card-link" target="_blank" rel="noopener">Live â†’</a></div>
+          <div class="card-links"><a href="https://literary-ledger.vercel.app/" class="card-link" target="_blank" rel="noopener">Live →</a></div>
         </div>
         <div class="card">
           <div class="card-header"><h3>Data Structures Visualization</h3><span class="card-badge">EdTech</span></div>
           <p>Interactive virtual lab to visualize complex data structures and algorithms, simplifying the learning curve for CS students.</p>
           <div class="tags"><span class="tag">EdTech</span><span class="tag">Visualization</span><span class="tag">Interactive</span></div>
-          <div class="card-links"><a href="https://ds-visualize.vercel.app/" class="card-link" target="_blank" rel="noopener">Live â†’</a></div>
+          <div class="card-links"><a href="https://ds-visualize.vercel.app/" class="card-link" target="_blank" rel="noopener">Live →</a></div>
         </div>
         <div class="card">
           <div class="card-header"><h3>NokogiriExplore</h3><span class="card-badge">CLI</span></div>
           <p>Interactive Ruby tutorial exploring Nokogiri web scraping through 10 progressive examples: HTML/XML parsing, selectors, DOM traversal.</p>
           <div class="tags"><span class="tag">Ruby</span><span class="tag">Nokogiri</span><span class="tag">Web Scraping</span></div>
-          <div class="card-links"><a href="https://github.com/samrudhi-builds/nokogiriExplore" class="card-link" target="_blank" rel="noopener">GitHub â†’</a></div>
+          <div class="card-links"><a href="https://github.com/samrudhi-builds/nokogiriExplore" class="card-link" target="_blank" rel="noopener">GitHub →</a></div>
         </div>
         <div class="card">
           <div class="card-header"><h3>Cozy Coffee & Curated Reads</h3><span class="card-badge">Frontend</span></div>
-          <p>Book review site styled as a cozy cafÃ© â€” curated reviews across genres in a warm, inviting theme. Built with React.</p>
+          <p>Book review site styled as a cozy café — curated reviews across genres in a warm, inviting theme. Built with React.</p>
           <div class="tags"><span class="tag">React</span><span class="tag">UI/UX</span><span class="tag">Content</span></div>
           <div class="card-links">
-            <a href="https://github.com/samrudhi-builds/DiM" class="card-link" target="_blank" rel="noopener">GitHub â†’</a>
-            <a href="https://di-m-samrudhi-builds.vercel.app/" class="card-link" target="_blank" rel="noopener">Live â†’</a>
+            <a href="https://github.com/samrudhi-builds/DiM" class="card-link" target="_blank" rel="noopener">GitHub →</a>
+            <a href="https://di-m-samrudhi-builds.vercel.app/" class="card-link" target="_blank" rel="noopener">Live →</a>
           </div>
         </div>
         <div class="card">
           <div class="card-header"><h3>HeadsUp</h3><span class="card-badge">Fun</span></div>
-          <p>Party game â€” guess Bollywood songs while holding your phone on your forehead. Friends give hints; tilt to confirm or skip.</p>
+          <p>Party game — guess Bollywood songs while holding your phone on your forehead. Friends give hints; tilt to confirm or skip.</p>
           <div class="tags"><span class="tag">React</span><span class="tag">Game</span><span class="tag">Netlify</span></div>
           <div class="card-links">
-            <a href="https://github.com/samrudhi-builds/HeadsUp" class="card-link" target="_blank" rel="noopener">GitHub â†’</a>
-            <a href="https://headsupforu.netlify.app/" class="card-link" target="_blank" rel="noopener">Live â†’</a>
+            <a href="https://github.com/samrudhi-builds/HeadsUp" class="card-link" target="_blank" rel="noopener">GitHub →</a>
+            <a href="https://headsupforu.netlify.app/" class="card-link" target="_blank" rel="noopener">Live →</a>
           </div>
         </div>
       </div>
     </div>
 
     <div>
-      <h3 style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:1rem;font-family:'JetBrains Mono',monospace;">ðŸŽ“ Academic</h3>
+      <h3 style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:1rem;font-family:'JetBrains Mono',monospace;">🎓 Academic</h3>
       <div class="cards-grid">
         <div class="card">
           <div class="card-header"><h3>Coffee Abode</h3><span class="card-badge">2024</span></div>
           <p>Full-stack PHP/MySQL e-commerce site with login, cart, and order management modules. Deployed on Netlify.</p>
           <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">E-commerce</span></div>
           <div class="card-links">
-            <a href="https://github.com/samrudhi-builds/CoffeeAbodee" class="card-link" target="_blank" rel="noopener">GitHub â†’</a>
-            <a href="https://coffeeabodee.netlify.app/" class="card-link" target="_blank" rel="noopener">Live â†’</a>
+            <a href="https://github.com/samrudhi-builds/CoffeeAbodee" class="card-link" target="_blank" rel="noopener">GitHub →</a>
+            <a href="https://coffeeabodee.netlify.app/" class="card-link" target="_blank" rel="noopener">Live →</a>
           </div>
         </div>
         <div class="card">
           <div class="card-header"><h3>CPU Scheduling Visualizer</h3><span class="card-badge">2024</span></div>
           <p>Desktop GUI visualizing 6 CPU scheduling algorithms with color-coded Gantt charts and performance metrics. Built with Python Tkinter.</p>
           <div class="tags"><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">OS</span><span class="tag">Algorithms</span></div>
-          <div class="card-links"><a href="https://github.com/samrudhi-builds/CPU-Scheduling-Algorithm-Visualizer" class="card-link" target="_blank" rel="noopener">GitHub â†’</a></div>
+          <div class="card-links"><a href="https://github.com/samrudhi-builds/CPU-Scheduling-Algorithm-Visualizer" class="card-link" target="_blank" rel="noopener">GitHub →</a></div>
         </div>
         <div class="card">
           <div class="card-header"><h3>Web App Security Testing</h3><span class="card-badge">2024</span></div>
           <p>Vulnerability analysis covering XSS and SQL Injection using Burp Suite, DVWA, and BeeWAPP with documented mitigation strategies.</p>
           <div class="tags"><span class="tag">Burp Suite</span><span class="tag">DVWA</span><span class="tag">Pentesting</span></div>
-          <div class="card-links"><a href="https://github.com/samrudhi-builds" class="card-link" target="_blank" rel="noopener">GitHub â†’</a></div>
+          <div class="card-links"><a href="https://github.com/samrudhi-builds" class="card-link" target="_blank" rel="noopener">GitHub →</a></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  EXPERIENCE  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?  EXPERIENCE  �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�? -->
 <section class="section" id="experience">
   <div class="container">
     <div class="section-header">
@@ -251,7 +251,7 @@ permalink: /
         <div class="timeline-title">Web Development Intern</div>
         <div class="timeline-org">MeshCraft</div>
         <div class="timeline-meta">
-          <span class="timeline-date">May 2025 â€“ Jul 2025</span>
+          <span class="timeline-date">May 2025 – Jul 2025</span>
           <span class="timeline-location">Remote</span>
         </div>
         <div class="timeline-body">Developed full-stack components including a high-performance IP showcase page. Conducted hosting evaluations and authored technical documentation.</div>
@@ -261,7 +261,7 @@ permalink: /
         <div class="timeline-title">Commonwealth Digital Prototyping Challenge</div>
         <div class="timeline-org">Commonwealth Secretariat</div>
         <div class="timeline-meta">
-          <span class="timeline-date">Jan 2025 â€“ May 2025</span>
+          <span class="timeline-date">Jan 2025 – May 2025</span>
           <span class="timeline-location">Remote</span>
         </div>
         <div class="timeline-body">Led cross-functional team under the Governance & Peace Directorate. Earned international recognition from the Assistant Secretary-General.</div>
@@ -271,7 +271,7 @@ permalink: /
         <div class="timeline-title">Machine Learning Intern</div>
         <div class="timeline-org">Prodigy InfoTech</div>
         <div class="timeline-meta">
-          <span class="timeline-date">Dec 2024 â€“ Jan 2025</span>
+          <span class="timeline-date">Dec 2024 – Jan 2025</span>
           <span class="timeline-location">Remote</span>
         </div>
         <div class="timeline-body">Implemented Python-based ML models on real-world datasets. Evaluated performance with statistical metrics. Conducted data preprocessing and EDA.</div>
@@ -281,17 +281,17 @@ permalink: /
         <div class="timeline-title">Blockchain Development Intern</div>
         <div class="timeline-org">EUCLID Lab, KJSCE</div>
         <div class="timeline-meta">
-          <span class="timeline-date">May 2024 â€“ Jul 2025</span>
+          <span class="timeline-date">May 2024 – Jul 2025</span>
           <span class="timeline-location">Mumbai</span>
         </div>
-        <div class="timeline-body">Engineered decentralized systems and smart contracts. Contributing to CADWAS â€” a specialized Bitcoin forensics tool.</div>
+        <div class="timeline-body">Engineered decentralized systems and smart contracts. Contributing to CADWAS — a specialized Bitcoin forensics tool.</div>
         <div class="tags" style="margin-top:0.6rem;"><span class="tag">Blockchain</span><span class="tag">Smart Contracts</span><span class="tag">Bitcoin Forensics</span></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-title">Data Science & Visualization Intern</div>
         <div class="timeline-org">KJSCE</div>
         <div class="timeline-meta">
-          <span class="timeline-date">Dec 2023 â€“ Feb 2024</span>
+          <span class="timeline-date">Dec 2023 – Feb 2024</span>
           <span class="timeline-location">Mumbai</span>
         </div>
         <div class="timeline-body">Built a full-scale expense tracker with Python + MySQL. Integrated visual dashboards for financial insights and designed optimized database schemas.</div>
@@ -301,7 +301,7 @@ permalink: /
         <div class="timeline-title">Data Structures Virtual Laboratory Intern</div>
         <div class="timeline-org">KJSCE</div>
         <div class="timeline-meta">
-          <span class="timeline-date">Jun 2023 â€“ Dec 2023</span>
+          <span class="timeline-date">Jun 2023 – Dec 2023</span>
           <span class="timeline-location">Mumbai</span>
         </div>
         <div class="timeline-body">Designed and built an interactive virtual lab to visualize complex data structures and algorithms for CS students.</div>
@@ -311,7 +311,7 @@ permalink: /
         <div class="timeline-title">ML Research &amp; Web Dev Intern</div>
         <div class="timeline-org">KJSCE</div>
         <div class="timeline-meta">
-          <span class="timeline-date">Jan 2023 â€“ Feb 2023</span>
+          <span class="timeline-date">Jan 2023 – Feb 2023</span>
           <span class="timeline-location">Mumbai</span>
         </div>
         <div class="timeline-body">Dual role: conducted ML literature reviews for the academic team, and developed a responsive music streaming website with seamless UI/UX.</div>
@@ -321,7 +321,7 @@ permalink: /
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  CERTIFICATIONS  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?  CERTIFICATIONS  �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�? -->
 <section class="section" id="certifications">
   <div class="container">
     <div class="section-header">
@@ -333,10 +333,10 @@ permalink: /
       <h2>Education</h2>
       <div class="card" style="max-width:600px;">
         <div class="card-header">
-          <h3>B.Tech â€” Information Technology</h3>
+          <h3>B.Tech — Information Technology</h3>
           <span class="card-badge">Honors: Cybersecurity</span>
         </div>
-        <p>K.J. Somaiya College of Engineering, Mumbai &nbsp;Â·&nbsp; 2022 â€“ 2026</p>
+        <p>K.J. Somaiya College of Engineering, Mumbai &nbsp;·&nbsp; 2022 – 2026</p>
         <div class="tags"><span class="tag">Full-Stack</span><span class="tag">Cybersecurity</span><span class="tag">Blockchain</span><span class="tag">ML</span><span class="tag">OS</span></div>
       </div>
     </div>
@@ -344,7 +344,7 @@ permalink: /
     <div class="certs-section">
       <h2>Cybersecurity &amp; Cloud</h2>
       <div class="certs-grid">
-        <div class="cert-card"><div class="cert-issuer">Google Cloud Skills Boost</div><div class="cert-name">Cloud Career Launchpad â€” Cybersecurity Track</div></div>
+        <div class="cert-card"><div class="cert-issuer">Google Cloud Skills Boost</div><div class="cert-name">Cloud Career Launchpad — Cybersecurity Track</div></div>
         <div class="cert-card"><div class="cert-issuer">IBM</div><div class="cert-name">Introduction to DevOps</div></div>
       </div>
     </div>
@@ -381,7 +381,7 @@ permalink: /
     <div class="certs-section">
       <h2>Research Publication</h2>
       <div class="card" style="max-width:600px;">
-        <div class="card-header"><h3>ICICCT-2025 â€” Springer</h3><span class="card-badge">Published</span></div>
+        <div class="card-header"><h3>ICICCT-2025 — Springer</h3><span class="card-badge">Published</span></div>
         <p>Research on innovations in food delivery applications at the International Conference on Intelligent Computing and Control Technologies.</p>
         <div class="tags"><span class="tag">Research</span><span class="tag">Springer</span><span class="tag">Mobile Apps</span></div>
       </div>
@@ -389,7 +389,7 @@ permalink: /
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  BLOG  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?  BLOG  �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�? -->
 <section class="section" id="blog">
   <div class="container">
     <div class="section-header">
@@ -412,22 +412,22 @@ permalink: /
     </div>
     {% if site.posts.size > 4 %}
     <div class="section-footer">
-      <a href="{{ '/blog/' | relative_url }}" class="btn btn-secondary">All Posts â†’</a>
+      <a href="{{ '/blog/' | relative_url }}" class="btn btn-secondary">All Posts →</a>
     </div>
     {% endif %}
     {% else %}
     <div style="padding:2rem 0;">
       <p style="color:var(--text-muted);margin-bottom:1rem;">Posts coming soon! In the meantime, read my newsletters:</p>
       <div class="social-strip">
-        <a href="https://containersandcoffee.substack.com" class="social-link" target="_blank" rel="noopener">â˜• Containers &amp; Coffee</a>
-        <a href="https://framesandfrappes.substack.com" class="social-link" target="_blank" rel="noopener">ðŸ“¸ Frames &amp; Frappes</a>
+        <a href="https://containersandcoffee.substack.com" class="social-link" target="_blank" rel="noopener">☕ Containers &amp; Coffee</a>
+        <a href="https://framesandfrappes.substack.com" class="social-link" target="_blank" rel="noopener">📸 Frames &amp; Frappes</a>
       </div>
     </div>
     {% endif %}
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  CONTACT  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?  CONTACT  �?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�? -->
 <section class="section" id="contact">
   <div class="container">
     <div class="section-header">
@@ -454,11 +454,11 @@ permalink: /
       </div>
       <div class="contact-item">
         <div class="contact-label">Tech Newsletter</div>
-        <a href="https://containersandcoffee.substack.com" class="contact-value" target="_blank" rel="noopener">Containers &amp; Coffee â†—</a>
+        <a href="https://containersandcoffee.substack.com" class="contact-value" target="_blank" rel="noopener">Containers &amp; Coffee ↗</a>
       </div>
       <div class="contact-item">
         <div class="contact-label">Photography</div>
-        <a href="https://framesandfrappes.substack.com" class="contact-value" target="_blank" rel="noopener">Frames &amp; Frappes â†—</a>
+        <a href="https://framesandfrappes.substack.com" class="contact-value" target="_blank" rel="noopener">Frames &amp; Frappes ↗</a>
       </div>
     </div>
   </div>

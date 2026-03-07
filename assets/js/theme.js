@@ -4,7 +4,7 @@
     { id: 'dark',   label: 'Dark',   dot: '#58a6ff' },
     { id: 'light',  label: 'Light',  dot: '#0969da' },
     { id: 'coffee', label: 'Coffee', dot: '#d4854a' },
-    { id: 'cyber',  label: 'Cyber',  dot: '#00f5ff' },
+    { id: 'cyber',  label: 'Cyber_', dot: '#830bf4' },
   ];
 
   // Apply saved theme immediately (prevent flash)
@@ -20,8 +20,16 @@
     var nav       = document.querySelector('.site-nav');
 
     // ── Indicator ──────────────────────────────────────────────
+    var logoSep = document.querySelector('.nav-logo span');
+
     function setIndicator() {
-      if (indicator) indicator.textContent = 'theme';
+      if (currentTheme === 'cyber') {
+        if (indicator) indicator.textContent = '// cyber.mode';
+        if (logoSep) logoSep.textContent = '://';
+      } else {
+        if (indicator) indicator.textContent = 'theme';
+        if (logoSep) logoSep.textContent = '.';
+      }
     }
     setIndicator();
 
@@ -44,6 +52,9 @@
           document.documentElement.setAttribute('data-theme', currentTheme);
           localStorage.setItem('sb-theme', currentTheme);
           setIndicator();
+          // re-query logoSep in case DOM changed
+          var sep = document.querySelector('.nav-logo span');
+          if (sep) sep.textContent = (currentTheme === 'cyber') ? '://' : '.';
           popup.querySelectorAll('.theme-option').forEach(function (o) {
             o.classList.remove('active');
           });
