@@ -1,14 +1,33 @@
 /* Samrudhi Builds — Theme Switcher, Nav & Scroll-Spy */
 (function () {
-  var THEMES = [
-    { id: 'dark',   label: 'Dark',   dot: '#58a6ff' },
-    { id: 'light',  label: 'Light',  dot: '#0969da' },
-    { id: 'coffee', label: 'Coffee', dot: '#d4854a' },
-    { id: 'cyber',  label: 'Cyber_', dot: '#830bf4' },
+  var THEME_GROUPS = [
+    {
+      label: 'Light Themes',
+      themes: [
+        { id: 'punchy', label: 'Bold & Punchy',  icon: 'bi-lightning-charge-fill', dot: '#4f46e5' },
+        { id: 'fresh',  label: 'Fresh & Modern', icon: 'bi-droplet-half',          dot: '#0d9488' },
+      ]
+    },
+    {
+      label: 'Dark Themes',
+      themes: [
+        { id: 'dark',   label: 'Dark',    icon: 'bi-moon-stars-fill', dot: '#58a6ff' },
+        { id: 'coffee', label: 'Coffee',  icon: 'bi-cup-hot-fill',    dot: '#d4854a' },
+        { id: 'cyber',  label: 'Cyber_',  icon: 'bi-cpu-fill',        dot: '#830bf4' },
+      ]
+    }
   ];
 
+  // Flat list for lookups
+  var ALL_THEMES = THEME_GROUPS.reduce(function (acc, g) {
+    return acc.concat(g.themes);
+  }, []);
+
   // Apply saved theme immediately (prevent flash)
-  var currentTheme = localStorage.getItem('sb-theme') || 'coffee';
+  var currentTheme = localStorage.getItem('sb-theme') || 'punchy';
+  // Migrate removed theme keys
+  if (currentTheme === 'soft' || currentTheme === 'light') { currentTheme = 'punchy'; }
+  if (currentTheme === 'earthy') { currentTheme = 'fresh'; }
   document.documentElement.setAttribute('data-theme', currentTheme);
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -35,34 +54,37 @@
 
     // ── Build popup options ─────────────────────────────────────
     if (popup) {
-      var popupHeader = document.createElement('div');
-      popupHeader.className = 'theme-popup-header';
-      popupHeader.textContent = 'Pick your theme';
-      popup.appendChild(popupHeader);
+      THEME_GROUPS.forEach(function (group) {
+        var groupHeader = document.createElement('div');
+        groupHeader.className = 'theme-popup-header';
+        groupHeader.textContent = group.label;
+        popup.appendChild(groupHeader);
 
-      THEMES.forEach(function (theme) {
-        var opt = document.createElement('button');
-        opt.className = 'theme-option' + (theme.id === currentTheme ? ' active' : '');
-        opt.innerHTML =
-          '<span class="theme-dot" style="background:' + theme.dot + '"></span>' +
-          theme.label;
+        group.themes.forEach(function (theme) {
+          var opt = document.createElement('button');
+          opt.className = 'theme-option' + (theme.id === currentTheme ? ' active' : '');
+          opt.innerHTML =
+            '<span class="theme-dot" style="background:' + theme.dot + '"></span>' +
+            '<i class="bi ' + theme.icon + ' theme-opt-icon"></i>' +
+            theme.label;
 
-        opt.addEventListener('click', function () {
-          currentTheme = theme.id;
-          document.documentElement.setAttribute('data-theme', currentTheme);
-          localStorage.setItem('sb-theme', currentTheme);
-          setIndicator();
-          // re-query logoSep in case DOM changed
-          var sep = document.querySelector('.nav-logo span');
-          if (sep) sep.textContent = (currentTheme === 'cyber') ? '://' : '.';
-          popup.querySelectorAll('.theme-option').forEach(function (o) {
-            o.classList.remove('active');
+          opt.addEventListener('click', function () {
+            currentTheme = theme.id;
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('sb-theme', currentTheme);
+            setIndicator();
+            // re-query logoSep in case DOM changed
+            var sep = document.querySelector('.nav-logo span');
+            if (sep) sep.textContent = (currentTheme === 'cyber') ? '://' : '.';
+            popup.querySelectorAll('.theme-option').forEach(function (o) {
+              o.classList.remove('active');
+            });
+            opt.classList.add('active');
+            popup.classList.remove('open');
           });
-          opt.classList.add('active');
-          popup.classList.remove('open');
-        });
 
-        popup.appendChild(opt);
+          popup.appendChild(opt);
+        });
       });
     }
 

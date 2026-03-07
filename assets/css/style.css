@@ -36,24 +36,50 @@
   --gradient: linear-gradient(135deg, #0d1117 0%, #1a2332 100%);
 }
 
-[data-theme="light"] {
+/* ── Bold & Punchy ──────────────────────────────────────────────── */
+[data-theme="punchy"] {
   --bg: #ffffff;
-  --bg-alt: #f6f8fa;
-  --surface: #f0f3f6;
-  --surface-hover: #e8ecf0;
-  --border: #d0d7de;
-  --text: #1c2128;
-  --text-muted: #636c76;
-  --accent: #0969da;
-  --accent-hover: #0550ae;
-  --accent2: #1a7f37;
-  --accent3: #cf222e;
-  --tag-bg: #ddf4ff;
-  --tag-text: #0550ae;
-  --nav-bg: rgba(255, 255, 255, 0.92);
-  --glow: rgba(9, 105, 218, 0.1);
-  --hero-grad: radial-gradient(ellipse at 70% 50%, rgba(9,105,218,0.05) 0%, transparent 60%);
-  --gradient: linear-gradient(135deg, #f6f8fa 0%, #e8f4ff 100%);
+  --bg-alt: #f5f3ff;
+  --surface: #ede9fe;
+  --surface-hover: #ddd6fe;
+  --border: #a5b4fc;
+  --text: #1e1b4b;
+  --text-muted: #4338ca;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent2: #f97316;
+  --accent3: #e11d48;
+  --tag-bg: #ede9fe;
+  --tag-text: #4f46e5;
+  --nav-bg: rgba(255, 255, 255, 0.94);
+  --glow: rgba(79, 70, 229, 0.22);
+  --hero-grad: radial-gradient(ellipse at 80% 20%, rgba(249,115,22,0.15) 0%, transparent 50%),
+               radial-gradient(ellipse at 20% 80%, rgba(79,70,229,0.12) 0%, transparent 50%);
+  --gradient: linear-gradient(120deg, #ffffff 0%, #f0f0ff 40%, #fff7ed 100%);
+  --punchy-glow1: rgba(79, 70, 229, 0.3);
+  --punchy-glow2: rgba(249, 115, 22, 0.25);
+}
+
+/* ── Fresh & Modern ─────────────────────────────────────────────── */
+[data-theme="fresh"] {
+  --bg: #f0fdf9;
+  --bg-alt: #ecfdf5;
+  --surface: #d1fae5;
+  --surface-hover: #a7f3d0;
+  --border: #34d399;
+  --text: #022c22;
+  --text-muted: #065f46;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --accent2: #65a30d;
+  --accent3: #0284c7;
+  --tag-bg: #d1fae5;
+  --tag-text: #0d9488;
+  --nav-bg: rgba(240, 253, 249, 0.92);
+  --glow: rgba(13, 148, 136, 0.18);
+  --hero-grad: radial-gradient(ellipse at 70% 40%, rgba(101,163,13,0.14) 0%, transparent 55%),
+               radial-gradient(ellipse at 25% 70%, rgba(13,148,136,0.12) 0%, transparent 50%);
+  --gradient: linear-gradient(135deg, #f0fdf9 0%, #ecfdf5 50%, #f0fdf4 100%);
 }
 
 [data-theme="coffee"] {
@@ -98,6 +124,100 @@
               radial-gradient(ellipse at 25% 80%, rgba(0,245,255,0.09) 0%, transparent 50%);
   --gradient: linear-gradient(135deg, #000814 0%, #0a001f 55%, #000814 100%);
 }
+
+/* =============================================
+   LIGHT THEME ANIMATIONS & FLOURISHES
+   ============================================= */
+
+/* ── Animated hero gradient shift ──────────────────────────────── */
+@keyframes gradShift {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+/* ── Pulsing accent glow for punchy headings ────────────────────── */
+@keyframes punchyGlow {
+  0%, 100% { text-shadow: 0 0 20px rgba(79,70,229,0.25), 0 0 40px rgba(249,115,22,0.15); }
+  50%       { text-shadow: 0 0 35px rgba(79,70,229,0.45), 0 0 60px rgba(249,115,22,0.30); }
+}
+
+/* ── Light sweep shimmer for cards ──────────────────────────────── */
+@keyframes lightSweep {
+  0%   { left: -80%; }
+  100% { left: 160%;  }
+}
+
+/* ── Punchy: animated gradient hero ────────────────────────────── */
+[data-theme="punchy"] .hero {
+  background: linear-gradient(120deg, #ffffff 0%, #ede9fe 30%, #fff7ed 60%, #fdf4ff 100%);
+  background-size: 250% 250%;
+  animation: gradShift 8s ease infinite;
+}
+
+[data-theme="punchy"] .hero h1 {
+  animation: punchyGlow 3.5s ease-in-out infinite;
+}
+
+[data-theme="punchy"] .stat-value {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Fresh: animated gradient hero ─────────────────────────────── */
+[data-theme="fresh"] .hero {
+  background: linear-gradient(120deg, #f0fdf9 0%, #ecfdf5 35%, #fefce8 65%, #f0fdf4 100%);
+  background-size: 250% 250%;
+  animation: gradShift 10s ease infinite;
+}
+
+[data-theme="fresh"] .stat-value {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Light themes: card shimmer on hover ──────────────────── */
+[data-theme="soft"] .card,
+[data-theme="punchy"] .card,
+[data-theme="earthy"] .card,
+[data-theme="fresh"] .card {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="punchy"] .card::before,
+[data-theme="fresh"] .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+  transition: none;
+}
+
+[data-theme="punchy"] .card:hover::before,
+[data-theme="fresh"] .card:hover::before {
+  animation: lightSweep 0.55s ease forwards;
+}
+
+/* ── Section label accent colour overrides ──────────────────────── */
+[data-theme="punchy"] .section-label  { color: #f97316; }
+[data-theme="fresh"] .section-label   { color: #65a30d; }
+
+
 
 /* =============================================
    RESET & BASE
@@ -356,6 +476,12 @@ img { max-width: 100%; height: auto; }
 }
 .theme-option:hover { background: var(--surface-hover); }
 .theme-option.active { color: var(--accent); background: var(--tag-bg); }
+
+.theme-opt-icon {
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
 
 .theme-popup-header {
   font-size: 0.7rem;
