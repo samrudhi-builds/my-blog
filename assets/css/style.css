@@ -103,26 +103,26 @@
 }
 
 [data-theme="cyber"] {
-  --bg: #000814;
-  --bg-alt: #030011;
-  --surface: #07003d;
-  --surface-hover: #0d0060;
-  --border: rgba(0, 245, 255, 0.2);
-  --text: #e0fbfc;
-  --text-muted: #8ecae6;
-  --accent: #00f5ff;
-  --accent-hover: #40ffff;
-  --accent2: #830bf4;
-  --accent3: #ff006e;
-  --accent-purple: #830bf4;
-  --tag-bg: rgba(131, 11, 244, 0.12);
-  --tag-text: #00f5ff;
-  --nav-bg: rgba(0, 8, 20, 0.94);
-  --glow: rgba(0, 245, 255, 0.18);
-  --glow-purple: rgba(131, 11, 244, 0.22);
-  --hero-grad: radial-gradient(ellipse at 75% 20%, rgba(131,11,244,0.14) 0%, transparent 50%),
-              radial-gradient(ellipse at 25% 80%, rgba(0,245,255,0.09) 0%, transparent 50%);
-  --gradient: linear-gradient(135deg, #000814 0%, #0a001f 55%, #000814 100%);
+  --bg: #06040f;
+  --bg-alt: #030207;
+  --surface: #0e0a28;
+  --surface-hover: #16103a;
+  --border: rgba(99, 102, 241, 0.22);
+  --text: #eeeeff;
+  --text-muted: #9da4e8;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --accent2: #f97316;
+  --accent3: #e11d48;
+  --accent-orange: #f97316;
+  --tag-bg: rgba(99, 102, 241, 0.12);
+  --tag-text: #818cf8;
+  --nav-bg: rgba(6, 4, 15, 0.94);
+  --glow: rgba(99, 102, 241, 0.2);
+  --glow-orange: rgba(249, 115, 22, 0.22);
+  --hero-grad: radial-gradient(ellipse at 75% 20%, rgba(249,115,22,0.16) 0%, transparent 50%),
+              radial-gradient(ellipse at 25% 80%, rgba(99,102,241,0.12) 0%, transparent 50%);
+  --gradient: linear-gradient(135deg, #06040f 0%, #100a2e 55%, #06040f 100%);
 }
 
 /* =============================================
@@ -243,10 +243,10 @@ body {
 /* ── Cyber: circuit-board grid background ───────────────────────── */
 [data-theme="cyber"] body {
   background-image:
-    linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(rgba(131, 11, 244, 0.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(131, 11, 244, 0.018) 1px, transparent 1px);
+    linear-gradient(rgba(99, 102, 241, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.045) 1px, transparent 1px),
+    linear-gradient(rgba(249, 115, 22, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249, 115, 22, 0.02) 1px, transparent 1px);
   background-size: 45px 45px, 45px 45px, 90px 90px, 90px 90px;
 }
 
@@ -269,32 +269,32 @@ body {
 /* ── Cyberpunk glitch keyframes ─────────────────────────────────── */
 @keyframes cyberglitch {
   0%, 88%, 100% {
-    text-shadow: 0 0 30px rgba(0, 245, 255, 0.3), 0 0 60px rgba(131, 11, 244, 0.12);
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.35), 0 0 60px rgba(249, 115, 22, 0.14);
     transform: none;
   }
   89% {
-    text-shadow: -3px 0 #830bf4, 3px 0 #00f5ff, 0 0 30px rgba(0, 245, 255, 0.3);
+    text-shadow: -3px 0 #f97316, 3px 0 #6366f1, 0 0 30px rgba(99, 102, 241, 0.35);
     transform: skewX(-2deg);
   }
   91% {
-    text-shadow: 3px 0 #830bf4, -3px 0 #00f5ff, 0 0 30px rgba(0, 245, 255, 0.3);
+    text-shadow: 3px 0 #f97316, -3px 0 #6366f1, 0 0 30px rgba(99, 102, 241, 0.35);
     transform: skewX(2deg);
   }
   93% {
-    text-shadow: -2px 0 #830bf4, 2px 0 #00f5ff;
+    text-shadow: -2px 0 #f97316, 2px 0 #6366f1;
     transform: none;
   }
   95% {
-    text-shadow: 0 0 30px rgba(0, 245, 255, 0.3), 0 0 60px rgba(131, 11, 244, 0.12);
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.35), 0 0 60px rgba(249, 115, 22, 0.14);
     transform: skewX(-1deg);
   }
 }
 
 @keyframes cyberglitch-fast {
   0%, 100% { text-shadow: none; transform: none; }
-  20% { text-shadow: -2px 0 #830bf4, 2px 0 #00f5ff; transform: skewX(-3deg); }
-  40% { text-shadow: 2px 0 #830bf4, -2px 0 #00f5ff; transform: skewX(3deg); }
-  60% { text-shadow: -1px 0 #830bf4, 1px 0 #00f5ff; transform: none; }
+  20% { text-shadow: -2px 0 #f97316, 2px 0 #6366f1; transform: skewX(-3deg); }
+  40% { text-shadow: 2px 0 #f97316, -2px 0 #6366f1; transform: skewX(3deg); }
+  60% { text-shadow: -1px 0 #f97316, 1px 0 #6366f1; transform: none; }
   80% { text-shadow: none; }
 }
 
@@ -384,7 +384,7 @@ img { max-width: 100%; height: auto; }
   white-space: nowrap;
 }
 .nav-logo span { color: var(--accent); }
-[data-theme="cyber"] .nav-logo span { color: var(--accent-purple); }
+[data-theme="cyber"] .nav-logo span { color: var(--accent-orange); }
 
 .nav-links {
   display: flex;
@@ -567,18 +567,18 @@ img { max-width: 100%; height: auto; }
 .hero h1 .accent { color: var(--accent); }
 
 [data-theme="cyber"] .hero h1 {
-  text-shadow: 0 0 40px rgba(0, 245, 255, 0.35), 0 0 80px rgba(131, 11, 244, 0.18);
+  text-shadow: 0 0 40px rgba(99, 102, 241, 0.4), 0 0 80px rgba(249, 115, 22, 0.2);
   animation: cyberglitch 8s infinite;
 }
 
 [data-theme="cyber"] .hero {
-  background: linear-gradient(135deg, #000814 0%, #0a001f 55%, #000814 100%);
+  background: linear-gradient(135deg, #06040f 0%, #100a2e 55%, #06040f 100%);
 }
 
 [data-theme="cyber"] .hero-tag {
-  border-color: var(--accent-purple);
-  color: var(--accent-purple);
-  background: rgba(131, 11, 244, 0.1);
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+  background: rgba(249, 115, 22, 0.1);
 }
 
 .hero-tagline {
@@ -618,7 +618,7 @@ img { max-width: 100%; height: auto; }
 }
 
 [data-theme="cyber"] .stat-value {
-  text-shadow: 0 0 16px var(--accent), 0 0 32px rgba(131, 11, 244, 0.3);
+  text-shadow: 0 0 16px var(--accent), 0 0 32px rgba(249, 115, 22, 0.3);
 }
 
 .stat-label {
@@ -667,17 +667,17 @@ img { max-width: 100%; height: auto; }
 }
 
 [data-theme="cyber"] .btn-primary {
-  background: linear-gradient(135deg, #830bf4 0%, #00f5ff 100%);
-  color: #000814;
+  background: linear-gradient(135deg, #f97316 0%, #6366f1 100%);
+  color: #06040f;
   font-weight: 700;
   letter-spacing: 0.04em;
   border: none;
 }
 [data-theme="cyber"] .btn-primary:hover {
-  background: linear-gradient(135deg, #9b2fff 0%, #40ffff 100%);
-  box-shadow: 0 0 22px rgba(0, 245, 255, 0.45), 0 0 44px rgba(131, 11, 244, 0.28);
+  background: linear-gradient(135deg, #fb923c 0%, #818cf8 100%);
+  box-shadow: 0 0 22px rgba(99, 102, 241, 0.45), 0 0 44px rgba(249, 115, 22, 0.3);
   transform: translateY(-2px);
-  color: #000814;
+  color: #06040f;
 }
 
 .btn-secondary {
@@ -776,8 +776,8 @@ section.section.expanded .section-body-inner {
 }
 
 [data-theme="cyber"] .card {
-  border-color: rgba(0, 245, 255, 0.15);
-  box-shadow: 0 0 12px rgba(131, 11, 244, 0.08), 0 0 4px rgba(0, 245, 255, 0.05);
+  border-color: rgba(99, 102, 241, 0.18);
+  box-shadow: 0 0 12px rgba(249, 115, 22, 0.07), 0 0 4px rgba(99, 102, 241, 0.06);
   position: relative;
   overflow: hidden;
 }
@@ -800,7 +800,7 @@ section.section.expanded .section-body-inner {
 
 [data-theme="cyber"] .card:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 22px rgba(0, 245, 255, 0.32), 0 0 44px rgba(131, 11, 244, 0.2);
+  box-shadow: 0 0 22px rgba(99, 102, 241, 0.35), 0 0 44px rgba(249, 115, 22, 0.2);
   transform: translateY(-3px);
 }
 
@@ -940,11 +940,11 @@ section.section.expanded .section-body-inner {
 }
 
 [data-theme="cyber"] .timeline::before {
-  background: linear-gradient(180deg, var(--accent-purple) 0%, var(--accent) 100%);
+  background: linear-gradient(180deg, var(--accent-orange) 0%, var(--accent) 100%);
 }
 
 [data-theme="cyber"] .timeline-item::before {
-  box-shadow: 0 0 8px var(--accent), 0 0 20px rgba(131, 11, 244, 0.45);
+  box-shadow: 0 0 8px var(--accent), 0 0 20px rgba(249, 115, 22, 0.45);
   background: var(--accent);
 }
 
@@ -1357,23 +1357,23 @@ section.section.expanded .section-body-inner {
 }
 
 [data-theme="cyber"] .dot-nav-item.active .dot {
-  box-shadow: 0 0 8px var(--accent), 0 0 16px rgba(131, 11, 244, 0.35);
+  box-shadow: 0 0 8px var(--accent), 0 0 16px rgba(249, 115, 22, 0.35);
 }
 
 [data-theme="cyber"] .site-nav.scrolled {
-  border-bottom-color: rgba(0, 245, 255, 0.2);
-  box-shadow: 0 1px 24px rgba(131, 11, 244, 0.12);
+  border-bottom-color: rgba(99, 102, 241, 0.22);
+  box-shadow: 0 1px 24px rgba(249, 115, 22, 0.1);
 }
 
 [data-theme="cyber"] .post-item:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 16px rgba(0, 245, 255, 0.2), 0 0 32px rgba(131, 11, 244, 0.12);
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.22), 0 0 32px rgba(249, 115, 22, 0.12);
 }
 
 [data-theme="cyber"] .contact-item:hover,
 [data-theme="cyber"] .cert-card:hover,
 [data-theme="cyber"] .achievement:hover {
-  box-shadow: 0 0 14px rgba(0, 245, 255, 0.18), 0 0 28px rgba(131, 11, 244, 0.1);
+  box-shadow: 0 0 14px rgba(99, 102, 241, 0.2), 0 0 28px rgba(249, 115, 22, 0.1);
 }
 
 .dot-label {
@@ -1402,58 +1402,57 @@ section.section.expanded .section-body-inner {
 }
 
 /* =============================================
-   CYBER THEME — PURPLE SPREAD
-   Purple (#830bf4) distributed throughout the UI
-   to create a true cyan ↔ purple dual-tone language.
-   Rule: accents / names / links = cyan
-         labels / metadata / icons = purple
+   CYBER THEME — ORANGE SPREAD
+   Orange (#f97316) <-> Indigo (#6366f1) dual-tone.
+   Rule: accents / names / links = indigo
+         labels / metadata / icons = orange
    ============================================= */
 
 /* ── Section labels ("// about", "// projects" etc.) ─────────── */
 [data-theme="cyber"] .section-label {
-  color: var(--accent-purple);
-  text-shadow: 0 0 12px rgba(131, 11, 244, 0.45);
+  color: var(--accent-orange);
+  text-shadow: 0 0 12px rgba(249, 115, 22, 0.45);
 }
 
 /* ── Section sub-headings ─────────────────────────────────────── */
 [data-theme="cyber"] .section-sub {
-  color: rgba(174, 130, 255, 0.8);
+  color: rgba(253, 186, 116, 0.8);
 }
 
 /* ── Sidebar "Key Achievements" title ────────────────────────── */
 [data-theme="cyber"] .sidebar-title {
-  color: var(--accent-purple);
+  color: var(--accent-orange);
   letter-spacing: 0.12em;
 }
 
 /* ── Achievement icons ────────────────────────────────────────── */
 [data-theme="cyber"] .achievement-icon {
-  color: var(--accent-purple);
-  text-shadow: 0 0 10px rgba(131, 11, 244, 0.6);
+  color: var(--accent-orange);
+  text-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
 }
 
 /* ── Achievement title ───────────────────────────────────────── */
 [data-theme="cyber"] .achievement-title {
-  color: var(--accent-purple);
+  color: var(--accent-orange);
 }
 
 /* ── Timeline organisation names ──────────────────────────────── */
 [data-theme="cyber"] .timeline-org {
-  color: var(--accent-purple);
-  text-shadow: 0 0 8px rgba(131, 11, 244, 0.4);
+  color: var(--accent-orange);
+  text-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
 }
 
 /* ── Timeline date & location ─────────────────────────────────── */
 [data-theme="cyber"] .timeline-date,
 [data-theme="cyber"] .timeline-location {
-  color: rgba(174, 130, 255, 0.75);
+  color: rgba(253, 186, 116, 0.75);
 }
 
 /* ── Card badges (default, not winner/ongoing) ───────────────── */
 [data-theme="cyber"] .card-badge {
-  background: rgba(131, 11, 244, 0.14);
-  color: var(--accent-purple);
-  border-color: rgba(131, 11, 244, 0.35);
+  background: rgba(249, 115, 22, 0.14);
+  color: var(--accent-orange);
+  border-color: rgba(249, 115, 22, 0.35);
 }
 /* keep winner & ongoing their own colours */
 [data-theme="cyber"] .card-badge.winner {
@@ -1462,88 +1461,88 @@ section.section.expanded .section-body-inner {
   border-color: rgba(240, 192, 64, 0.3);
 }
 [data-theme="cyber"] .card-badge.ongoing {
-  background: rgba(0, 245, 255, 0.1);
+  background: rgba(99, 102, 241, 0.12);
   color: var(--accent);
-  border-color: rgba(0, 245, 255, 0.3);
+  border-color: rgba(99, 102, 241, 0.3);
 }
 
 /* ── Tags — alternating purple / cyan ────────────────────────── */
 [data-theme="cyber"] .tag:nth-child(even) {
-  background: rgba(131, 11, 244, 0.14);
-  color: #bf80ff;
-  border: 1px solid rgba(131, 11, 244, 0.3);
+  background: rgba(249, 115, 22, 0.14);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.3);
 }
 [data-theme="cyber"] .tag:nth-child(odd) {
-  background: rgba(0, 245, 255, 0.08);
+  background: rgba(99, 102, 241, 0.1);
   color: var(--accent);
-  border: 1px solid rgba(0, 245, 255, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.22);
 }
 
 /* ── Cert issuer labels ───────────────────────────────────────── */
 [data-theme="cyber"] .cert-issuer {
-  color: var(--accent-purple);
-  text-shadow: 0 0 8px rgba(131, 11, 244, 0.35);
+  color: var(--accent-orange);
+  text-shadow: 0 0 8px rgba(249, 115, 22, 0.35);
 }
 
 /* ── Cert section group headings ──────────────────────────────── */
 [data-theme="cyber"] .certs-section h2 {
-  color: var(--accent-purple);
-  border-bottom-color: rgba(131, 11, 244, 0.3);
+  color: var(--accent-orange);
+  border-bottom-color: rgba(249, 115, 22, 0.3);
 }
 
 /* ── Contact labels ───────────────────────────────────────────── */
 [data-theme="cyber"] .contact-label {
-  color: var(--accent-purple);
+  color: var(--accent-orange);
 }
 
 /* ── Social link hover → purple ──────────────────────────────── */
 [data-theme="cyber"] .social-link:hover {
-  color: var(--accent-purple);
-  border-color: var(--accent-purple);
-  box-shadow: 0 0 10px rgba(131, 11, 244, 0.25);
+  color: var(--accent-orange);
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.25);
 }
 
 /* ── Footer link hover → purple ──────────────────────────────── */
 [data-theme="cyber"] .footer-links a:hover {
-  color: var(--accent-purple);
+  color: var(--accent-orange);
 }
 
 /* ── Nav active / hover ───────────────────────────────────────── */
 [data-theme="cyber"] .nav-links a:hover,
 [data-theme="cyber"] .nav-links a.active {
-  color: var(--accent-purple);
-  background: rgba(131, 11, 244, 0.1);
+  color: var(--accent-orange);
+  background: rgba(249, 115, 22, 0.1);
 }
 
 /* ── Theme indicator micro-label ─────────────────────────────── */
 [data-theme="cyber"] #theme-indicator {
-  color: var(--accent-purple);
+  color: var(--accent-orange);
 }
 
 /* ── Post date metadata ──────────────────────────────────────── */
 [data-theme="cyber"] .post-date {
-  color: rgba(174, 130, 255, 0.7);
+  color: rgba(253, 186, 116, 0.75);
 }
 
 /* ── Hero stat labels ────────────────────────────────────────── */
 [data-theme="cyber"] .stat-label {
-  color: rgba(174, 130, 255, 0.75);
+  color: rgba(253, 186, 116, 0.8);
 }
 
 /* ── Stat values: even stats (2nd, 4th) → purple ─────────────── */
 [data-theme="cyber"] .stat:nth-child(even) .stat-value {
-  color: var(--accent-purple);
-  text-shadow: 0 0 16px rgba(131, 11, 244, 0.5);
+  color: var(--accent-orange);
+  text-shadow: 0 0 16px rgba(249, 115, 22, 0.5);
 }
 
 /* ── Page header label ───────────────────────────────────────── */
 [data-theme="cyber"] .page-header .section-label {
-  color: var(--accent-purple);
+  color: var(--accent-orange);
 }
 
 /* ── btn-secondary in cyber → purple border/text ─────────────── */
 [data-theme="cyber"] .btn-secondary:hover {
-  border-color: var(--accent-purple);
-  color: var(--accent-purple);
-  box-shadow: 0 0 14px rgba(131, 11, 244, 0.2);
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+  box-shadow: 0 0 14px rgba(249, 115, 22, 0.2);
 }
